@@ -201,7 +201,7 @@
 </button>
 
 
-
+  <!--Division 1-->
     <div class="card-slider" id="cardSlider">
       <!-- Card 1 -->
 
@@ -295,9 +295,114 @@
   </section>
 
 
+<!--Division 2-->
+  <!--card silder-->
+ <section class="slider-wrapper">
+    <h3 class="section-title">✨ Kickstart Your Anime Journey</h3>
+    <button class="slider-arrow left" onclick="scrollSlider2(-1)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <path d="M15.4 7.4L14 6l-6 6 6 6 1.4-1.4L10.8 12z" fill="black" />
+      </svg>
+    </button>
+    <div class="card-slider" id="cardSlider2">
+
+        <!-- Card 1 -->
+
+      <a href="watch/watch1.html" target="_blank" class="card-link">
+  <div class="card">
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fencrypted-tbn2.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcSiogYxtTl08WbEkj71vnapcaLHcx9op6JM97Kn2w5Oft_yBuC_&psig=AOvVaw3q-1aFcIrGqQEYO3YrW-Cd&ust=1754058650712000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNCQmuin544DFQAAAAAdAAAAABAE" class="card-img-top" alt="Your Name">
+    <div class="card-body">
+      <h5 class="card-title">Death Note</h5>
+      <p class="card-description">A high school student discovers a supernatural notebook that grants the power to kill anyone whose name is written in it.</p>
+                <small style="font-size: 20px;">Sub | Dub</small>
+    </div>
+  </div>
+</a>
+
+
+
+      <!-- Card 2 -->
+
+        <a href="watch/watch2.html" target="_blank" class="card-link">
+      <div class="card">
+        <img src="https://image.pmgstatic.com/cache/resized/w420/files/images/film/posters/163/827/163827084_3f2dcd.jpg" class="card-img-top" alt="AOT">
+        <div class="card-body">
+          <h5 class="card-title">Vinland Saga</h5>
+          <p class="card-description">A young warrior seeks revenge in a brutal Viking world, only to find a deeper purpose beyond bloodshed.</p>
+          <small style="font-size: 20px;">Sub | Dub</small>
+        </div>
+      </div>
+      </a>
+
+
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/71VMgvFcmvL._UF1000,1000_QL80_.jpg" class="card-img-top" alt="Pancreas">
+        <div class="card-body">
+          <h5 class="card-title">Classroom of the Elite</h5>
+          <p class="card-description">In a school where only the elite survive, one mysterious student hides his genius to manipulate the system.</p>
+          <small style="font-size: 20px;">Sub | Dub</small>
+        </div>
+      </div>
+
+
+
+
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BYzU2MWQ5NGQtYmNlMC00ZjJkLWJmODItZDM5MDM3YmUyMWJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="Weathering with You">
+        <div class="card-body">
+          <h5 class="card-title">Monster</h5>
+          <p class="card-description">A brilliant surgeon’s life unravels after saving a boy who grows up to become a cold-blooded killer.</p>
+          <small style="font-size: 20px;">Sub | Dub</small>
+        </div>
+      </div>
+
+
+
+      <!-- Card 5 -->
+      <div class="card">
+        <img src="demon-salyer.jpg" class="card-img-top" alt="5 Centimeters per Second">
+        <div class="card-body">
+          <h5 class="card-title">Demon Slayer</h5>
+          <p class="card-description">
+              After demons slaughter his family, Tanjiro joins the Demon Slayer Corps to avenge them and save his sister</p>
+          <small style="font-size: 20px;">Sub | Dub</small>
+        </div>
+      </div>
+
+      
+
+      <!-- Card 6 -->
+      <div class="card">
+        <img src="https://fwcdn.pl/fpo/21/16/862116/7936530_1.3.jpg" class="card-img-top" alt="5 Centimeters per Second">
+        <div class="card-body">
+          <h5 class="card-title">Jujutsu Kaisen</h5>
+          <p class="card-description">
+            Yuji Itadori joins a secret organization to fight deadly curses after swallowing a powerful cursed object.</p>
+          <small style="font-size: 20px;">Sub | Dub</small>
+        </div>
+      </div>
+
+
+<!-- FIXED Right Arrow for Division 2 -->
+<button class="slider-arrow right" onclick="scrollSlider2(1)">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+    <path d="M8.6 7.4L10 6l6 6-6 6-1.4-1.4 4.6-4.6z" fill="black" />
+  </svg>
+</button>
+
+
+
   <script>
     function scrollSlider(direction) {
       const slider = document.getElementById('cardSlider');
+      const scrollAmount = 300;
+      slider.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    }
+    function scrollSlider2(direction) {
+      const slider = document.getElementById('cardSlider2');
       const scrollAmount = 300;
       slider.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
     }
